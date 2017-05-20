@@ -1,4 +1,4 @@
-# Demonstration of packaging Angular libraries with `ng-packagr`
+# Packaging Angular libraries with `ng-packagr`
 
 > Packaging Angular libraries is fun!
 
