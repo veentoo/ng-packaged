@@ -1,5 +1,17 @@
 # Demonstration of packaging Angular libraries with `ng-packagr`
 
+> Packaging Angular libraries is fun!
+
+Start-up the sample:
+
+```bash
+$ yarn install
+$ yarn build:lib
+$ ng serve
+```
+
+Here are instructions how this demo was created.
+
 
 #### Install
 
@@ -72,4 +84,82 @@ Now, build your library:
 
 ```bash
 $ yarn build:lib
+```
+
+
+#### Show off in Demo App
+
+First, in `.angular-cli.json` set `outDir` of the Angular CLI app, so that it does not conflict with output directory of your library!
+
+```json
+{
+  "project": {
+    "name": "ng-packaged"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist/app",
+      /* ... */
+    }
+  ]
+}
+```
+
+
+Then, in `tsconfig.app.json`, map the TypeScript import path:
+
+```json
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "@my/lib": [ "../dist/my-lib" ]
+    }
+  }
+}
+```
+
+Finally, include in your application.
+In `app.module.ts`:
+
+```ts
+import { MyLibModule } from '@my/lib';
+
+@NgModule({
+  imports: [
+    /* .. */
+    MyLibModule.forRoot()
+  ],
+})
+export class AppModule { }
+```
+
+And use them in components like `app.component.ts`:
+
+```ts
+import { Component } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+import { BarService } from '@my/lib';
+
+@Component({
+  selector: 'app-root',
+  template: `
+<my-foo></my-foo>
+<hr>
+<marquee>{{ value$ | async }}</marquee>
+`,
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+
+  value$: Observable<string>;
+
+  constructor (
+    bar: BarService
+  ) {
+     this.value$ = bar.value;
+  }
+
+}
 ```
