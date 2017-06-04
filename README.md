@@ -1,8 +1,11 @@
-# Packaging Angular libraries with `ng-packagr`
+# Packaging Angular libraries with ng-packagr
 
-> Packaging Angular libraries is fun!
+> Angular libraries are fun!
 
-Start-up the sample:
+This repository is an example how to set-up an Angular library project.
+
+It features the `@my/lib` library package: `@my/lib` is packaged with [ng-packagr](https://github.com/dherges/ng-packagr) and then imported into an Angular CLI app.
+To run the example, do the following steps:
 
 ```bash
 $ yarn install
