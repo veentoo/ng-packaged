@@ -1,8 +1,0 @@
-{
-  "src": "my-lib",
-  "dest": "dist/my-lib",
-  "workingDirectory": ".ng_build",
-  "ngc": {
-    "tsconfig": "tsconfig.lib.json"
-  }
-}
