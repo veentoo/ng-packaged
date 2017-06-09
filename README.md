@@ -25,7 +25,7 @@ Set up an Angular CLI project, add `ng-packagr`:
 
 ```bash
 $ ng new ng-packaged
-$ yarn add ng-packagr
+$ yarn add --dev ng-packagr
 ```
 
 
