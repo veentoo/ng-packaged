@@ -62,6 +62,16 @@ It picks up a configuration in `ng-package.json`:
 }
 ```
 
+ng-packagr comes with built-in support for [autoprefixer](https://github.com/postcss/autoprefixer) and [postcss](https://github.com/postcss/postcss).
+It uses [browserslist](https://github.com/ai/browserslist) to determine which browser versions should be supported.
+Create the file `my-lib/.browserslistrc`:
+
+```
+last 2 Chrome versions
+iOS > 10
+Safari > 10
+```
+
 
 #### Build
 
