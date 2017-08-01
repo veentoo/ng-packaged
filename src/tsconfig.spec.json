@@ -8,7 +8,10 @@
     "types": [
       "jasmine",
       "node"
-    ]
+    ],
+    "paths": {
+      "@my/lib": [ "../dist/my-lib" ]
+    }
   },
   "files": [
     "test.ts"
