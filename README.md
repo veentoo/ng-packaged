@@ -1,7 +1,8 @@
 # Packaging Angular libraries with ng-packagr
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/dherges/ng-packaged.svg)](https://greenkeeper.io/)
-[![CircleCI](https://circleci.com/gh/dherges/ng-packaged/tree/master.svg?style=svg)](https://circleci.com/gh/dherges/ng-packaged/tree/master)
+[![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg?style=flat-square)](https://renovateapp.com/)
+[![CircleCI](https://img.shields.io/circleci/project/github/dherges/ng-packaged/master.svg?style=flat-square&label=Circle%20CI)](https://circleci.com/gh/dherges/ng-packaged)
+
 
 > Angular libraries are fun!
 
