@@ -6,6 +6,7 @@
   "apps": [
     {
       "root": "src",
+      "name": "dev",
       "outDir": "dist/app",
       "assets": [
         "assets",
@@ -30,7 +31,7 @@
     },
     {
       "root": "src",
-      "name": "dev",
+      "name": "packages",
       "outDir": "dist/app",
       "assets": [
         "assets",
@@ -40,7 +41,7 @@
       "main": "main.ts",
       "polyfills": "polyfills.ts",
       "test": "test.ts",
-      "tsconfig": "tsconfig.dev.json",
+      "tsconfig": "tsconfig.packages.json",
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [

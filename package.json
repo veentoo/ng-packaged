@@ -1,19 +1,18 @@
 {
   "name": "ng-packaged",
   "version": "0.0.0",
+  "private": true,
   "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:app": "cpr dist/my-lib src/@my/lib && ng build && rimraf src/@my",
-    "build:dev": "ng build --app dev",
+    "build:app": "cpr dist/my-lib src/@my/lib && ng build --app packages && rimraf src/@my",
     "build:lib": "ng-packagr",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
   "dependencies": {
     "@angular/common": "~5.0.0",
     "@angular/compiler": "~5.0.0",
@@ -28,7 +27,7 @@
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
-    "@angular/cli": "1.5.0",
+    "@angular/cli": "~1.5.0",
     "@angular/compiler-cli": "~5.0.0",
     "@angular/language-service": "~5.0.0",
     "@types/jasmine": "~2.6.0",
