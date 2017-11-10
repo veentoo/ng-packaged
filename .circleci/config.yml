@@ -42,5 +42,5 @@ jobs:
 
       # Store build artefacts on circle
       - store_artifacts:
-          path: ~/dist
+          path: ~/repo/dist
           destination: dist
