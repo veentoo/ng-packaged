@@ -22,7 +22,7 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-      - run_ node --version && yarn --version && git --version
+      - run: node --version && yarn --version && git --version
       - run: yarn install
 
       - save_cache:
