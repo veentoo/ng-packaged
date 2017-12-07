@@ -3969,7 +3969,7 @@ negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
 
-ng-packagr@^2.0.0-rc.4:
+ng-packagr@2.0.0-rc.4:
   version "2.0.0-rc.4"
   resolved "https://registry.yarnpkg.com/ng-packagr/-/ng-packagr-2.0.0-rc.4.tgz#2dc2e179e54e76f24bc7482975169928710c0808"
   dependencies:
