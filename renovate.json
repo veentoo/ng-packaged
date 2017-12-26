@@ -2,7 +2,7 @@
   "pinVersions": false,
   "ignoreUnstable": false,
   "semanticCommits": true,
-  "semanticPrefix": "chore:",
+  "semanticPrefix": "build:",
   "commitMessage": "{{semanticPrefix}}update {{depName}} to version {{newVersion}}",
   "packageFiles": [
     "package.json",
