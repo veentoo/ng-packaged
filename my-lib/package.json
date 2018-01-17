@@ -17,6 +17,9 @@
     "lib": {
       "entryFile": "src/public_api.ts"
     },
-    "dest": "../dist/my-lib"
+    "dest": "../dist/my-lib",
+    "externals": {
+      "ramda": "R"
+    }
   }
 }
